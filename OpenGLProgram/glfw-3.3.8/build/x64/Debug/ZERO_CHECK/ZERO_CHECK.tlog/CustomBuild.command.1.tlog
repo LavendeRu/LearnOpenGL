@@ -1,0 +1,10 @@
+^E:\TAWORKSPACE\GLFW-3.3.8\BUILD\CMAKEFILES\27B03C76B9D6F45E6B4EA6B4ED522593\GENERATE.STAMP.RULE
+setlocal
+E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\bin\cmake.exe -SE:/TAWorkSpace/glfw-3.3.8 -BE:/TAWorkSpace/glfw-3.3.8/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/TAWorkSpace/glfw-3.3.8/build/GLFW.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

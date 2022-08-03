@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{927205D9-E4C3-3582-A42E-1F159DCA5F58}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\TAWorkSpace\glfw-3.3.8\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/TAWorkSpace/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\bin\cmake.exe -SE:/TAWorkSpace/glfw-3.3.8 -BE:/TAWorkSpace/glfw-3.3.8/build --check-stamp-file E:/TAWorkSpace/glfw-3.3.8/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCCompilerABI.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDependentOption.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeRCInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystem.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckForPthreads.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckFunctionExists.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckIncludeFile.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckLibraryExists.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindDoxygen.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindPackageMessage.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindThreads.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\GNUInstallDirs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeCCompiler.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeRCCompiler.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeSystem.cmake;E:\TAWorkSpace\glfw-3.3.8\cmake_uninstall.cmake.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw3.pc.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw3Config.cmake.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/TAWorkSpace/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\bin\cmake.exe -SE:/TAWorkSpace/glfw-3.3.8 -BE:/TAWorkSpace/glfw-3.3.8/build --check-stamp-file E:/TAWorkSpace/glfw-3.3.8/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCCompilerABI.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDependentOption.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeRCInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystem.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckForPthreads.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckFunctionExists.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckIncludeFile.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckLibraryExists.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindDoxygen.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindPackageMessage.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindThreads.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\GNUInstallDirs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeCCompiler.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeRCCompiler.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeSystem.cmake;E:\TAWorkSpace\glfw-3.3.8\cmake_uninstall.cmake.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw3.pc.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw3Config.cmake.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/TAWorkSpace/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\bin\cmake.exe -SE:/TAWorkSpace/glfw-3.3.8 -BE:/TAWorkSpace/glfw-3.3.8/build --check-stamp-file E:/TAWorkSpace/glfw-3.3.8/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCCompilerABI.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDependentOption.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeRCInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystem.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckForPthreads.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckFunctionExists.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckIncludeFile.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckLibraryExists.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindDoxygen.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindPackageMessage.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindThreads.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\GNUInstallDirs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeCCompiler.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeRCCompiler.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeSystem.cmake;E:\TAWorkSpace\glfw-3.3.8\cmake_uninstall.cmake.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw3.pc.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw3Config.cmake.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/TAWorkSpace/glfw-3.3.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\bin\cmake.exe -SE:/TAWorkSpace/glfw-3.3.8 -BE:/TAWorkSpace/glfw-3.3.8/build --check-stamp-file E:/TAWorkSpace/glfw-3.3.8/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCCompilerABI.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDependentOption.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeRCInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystem.cmake.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckCSourceCompiles.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckForPthreads.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckFunctionExists.c;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckIncludeFile.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CheckLibraryExists.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\MSVC.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindDoxygen.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindPackageMessage.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\FindThreads.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\GNUInstallDirs.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Internal\CheckSourceCompiles.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\Windows.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;E:\TAWorkSpace\cmake-3.24.0-rc5-windows-x86_64\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeCCompiler.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeRCCompiler.cmake;E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\3.24.0-rc5\CMakeSystem.cmake;E:\TAWorkSpace\glfw-3.3.8\cmake_uninstall.cmake.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw3.pc.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw3Config.cmake.in;E:\TAWorkSpace\glfw-3.3.8\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\TAWorkSpace\glfw-3.3.8\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\ZERO_CHECK.vcxproj">
+      <Project>{96C9EA6C-D4BD-3EDC-8455-1656FA8E7AB0}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\examples\boing.vcxproj">
+      <Project>{7C9F8EC3-481F-30B9-AF61-FDDD441B8278}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\clipboard.vcxproj">
+      <Project>{AB569CFF-725F-3055-BA27-147AAF0AB234}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\cursor.vcxproj">
+      <Project>{B877D544-D5AA-33E7-99B5-BD38342E0FB1}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\empty.vcxproj">
+      <Project>{B7D1C0C1-04C9-3270-9C1C-F72A150DE011}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\events.vcxproj">
+      <Project>{7D6462AE-B857-331C-B044-8F8ABDE91B00}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\gamma.vcxproj">
+      <Project>{C6944129-7531-35CE-8A97-DBF3E3060D1B}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\examples\gears.vcxproj">
+      <Project>{71FC04D1-E51B-39C7-84C3-A54A72120956}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\src\glfw.vcxproj">
+      <Project>{C327F040-F1F1-3779-ADA4-FCC38DFB3EC8}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\glfwinfo.vcxproj">
+      <Project>{3536F99A-5EE8-37E5-8401-D66031FFE501}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\examples\heightmap.vcxproj">
+      <Project>{11A89A1D-35C8-33FC-81AB-F9F83CEA6B5B}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\icon.vcxproj">
+      <Project>{40ADF96E-688D-3596-97AD-68FCA2CD8E46}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\iconify.vcxproj">
+      <Project>{BE8FE43F-061B-3D7B-BB94-1E32A31BF0F6}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\inputlag.vcxproj">
+      <Project>{5843BE30-CC7C-3933-976C-37B31635929D}</Project>
+      <Name>inputlag</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\joysticks.vcxproj">
+      <Project>{B3C345AF-E4DB-3E56-90F0-98B9E9633E84}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\monitors.vcxproj">
+      <Project>{D911CE3B-CE0B-3B4D-B320-5994BC2126E5}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\msaa.vcxproj">
+      <Project>{EC2BDEE2-CB9D-3265-83D6-3B37D71B524B}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\examples\offscreen.vcxproj">
+      <Project>{9A467CEC-E43E-39A4-9C08-E41DAD2FCC59}</Project>
+      <Name>offscreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\opacity.vcxproj">
+      <Project>{0AEF80BF-4E1F-3EEA-9F72-B7AB182ABDE7}</Project>
+      <Name>opacity</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\examples\particles.vcxproj">
+      <Project>{423FC8C6-810A-33ED-B990-FF8379F60AE0}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\reopen.vcxproj">
+      <Project>{BB2243AD-5089-3073-8962-9E094E2BCB89}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\examples\sharing.vcxproj">
+      <Project>{1D005E05-B621-3395-91F9-0A02B8BCA16F}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\examples\simple.vcxproj">
+      <Project>{590CD32C-A2A1-3FDA-BC1A-B5B955380A2E}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\examples\splitview.vcxproj">
+      <Project>{00187E1F-E426-32D7-BC5B-B297FC794ACC}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\tearing.vcxproj">
+      <Project>{440F83C2-2C3D-3A27-95DF-BE87263B1A88}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\threads.vcxproj">
+      <Project>{9BAF20F2-C54B-3B6D-935A-BB6EED2101BD}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\timeout.vcxproj">
+      <Project>{E455D22F-A71D-35CC-B02A-444B0D725356}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\title.vcxproj">
+      <Project>{136604D4-FD36-350D-93F0-308CBD371199}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\triangle-vulkan.vcxproj">
+      <Project>{F03D4164-69E1-30EE-BFDD-A6055E129374}</Project>
+      <Name>triangle-vulkan</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\examples\wave.vcxproj">
+      <Project>{B51175F1-BD50-3213-85E5-4F822981D33A}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\TAWorkSpace\glfw-3.3.8\build\tests\windows.vcxproj">
+      <Project>{D28B8BF5-44F9-3E45-A458-AC08E19AF20E}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
