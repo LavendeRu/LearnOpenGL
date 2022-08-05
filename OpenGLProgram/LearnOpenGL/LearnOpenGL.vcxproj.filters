@@ -15,10 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="Window.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="glad.c">
+    <ClCompile Include="Triggle_VBO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle_VAO.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Triggle_EBO.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

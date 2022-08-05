@@ -78,8 +78,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>E:\TAWorkSpace\OpenGL\libs;$(LibraryPath)</LibraryPath>
-    <IncludePath>E:\TAWorkSpace\OpenGL\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\TAWorkSpace\LearnOpenGL\OpenGLProgram\OpenGL\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\TAWorkSpace\LearnOpenGL\OpenGLProgram\OpenGL\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -143,6 +143,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
+    <ClCompile Include="Triangle_VAO.cpp" />
+    <ClCompile Include="Triggle_EBO.cpp" />
+    <ClCompile Include="Triggle_VBO.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
